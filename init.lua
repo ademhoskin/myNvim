@@ -34,14 +34,11 @@ require("lazy").setup({
       end,
     },
     {
-      "sainnhe/gruvbox-material",
+      "scottmckendry/cyberdream.nvim",
       lazy = false,
       priority = 1000,
       config = function()
-        -- Optionally configure and load the colorscheme
-        -- directly inside the plugin declaration.
-        vim.g.gruvbox_material_enable_italic = true
-        vim.cmd.colorscheme("gruvbox-material")
+        require("cyberdream").setup({ transparent = true })
       end,
     },
     {
@@ -239,7 +236,7 @@ require("lazy").setup({
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "gruvbox" } },
+  install = { colorscheme = { "cyberdream" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
@@ -248,4 +245,5 @@ require("lazy").setup({
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+vim.cmd("colorscheme cyberdream")
 vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>")
