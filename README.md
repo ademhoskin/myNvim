@@ -49,7 +49,6 @@ A lightweight yet powerful Neovim configuration optimized for navigating large c
 
 ### Development Tools
 - **nvim-cmp** - Autocompletion engine
-- **copilot.vim** - GitHub Copilot integration
 - **nvim-dap** - Debug Adapter Protocol client
 - **none-ls.nvim** - Formatters and linters
 
@@ -58,7 +57,7 @@ A lightweight yet powerful Neovim configuration optimized for navigating large c
 - **auto-session** - Automatic session management
 
 ### UI & Themes
-- **cyberdream** - Color scheme
+- **gruvbox-material** - Color scheme
 - **nvim-web-devicons** - File type icons
 
 ## Installation
