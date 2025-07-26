@@ -1,0 +1,56 @@
+#!/bin/bash
+
+cat << 'EOF'
+# Neovim IDE Keybinds (Leader = Space)
+
+## File Navigation
+- Ctrl+p       - Find files
+- <leader>ff   - Find files (alt)
+- <leader>fg   - Live grep search
+- <leader>fG   - Advanced grep with args
+- <leader>fb   - Find buffers
+- <leader>fh   - Help tags
+- <leader>fr   - Recent files
+- Ctrl+n       - Oil file browser
+- <leader>-    - Open parent directory
+
+## Symbol Navigation
+- gd           - Go to definition
+- gD           - Go to declaration
+- gi           - Go to implementation
+- gt           - Go to type definition
+- gr           - Find references
+- <leader>fs   - Document symbols
+- <leader>fS   - Workspace symbols
+- <leader>fi   - Implementations
+- <leader>ft   - Type definitions
+
+## LSP Actions
+- K            - Hover documentation
+- <leader>rn   - Rename symbol
+- <leader>ca   - Code actions
+- <leader>gf   - Format code
+
+## Diagnostics/Errors
+- <leader>e    - Show diagnostic
+- [d / ]d      - Previous/next diagnostic
+- <leader>D    - Previous error
+- <leader>d    - Next error
+- <leader>q    - Diagnostic list
+- <leader>wa   - All workspace diagnostics
+
+## Git Integration
+- <leader>gs   - Git status
+- <leader>gb   - Git blame
+- <leader>gl   - Git log
+
+## Debugging
+- <leader>dt   - Toggle breakpoint
+- <leader>dc   - Continue debugging
+
+## Quick Actions
+- <leader>w    - Save file
+- <leader>nh   - Clear search highlights
+
+Advanced grep args: --type=py, --glob=*.js, --case-sensitive
+EOF
